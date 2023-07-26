@@ -1,4 +1,4 @@
-package BinaryTree.BinarySearchTree;
+import java.util.*;
 class Node {
     char key;
     Node left,right;
@@ -23,15 +23,15 @@ class BinarySolution{
         }
         return root;
     }
-        void preorderTraversal(Node n){
+        void preorderTraversal(Node root){
             if(root != null){
-                System.out.print(n.key + " ");
-                preorderTraversal(n.left);
-                preorderTraversal(n.right);
+                System.out.print(root.key + " ");
+                preorderTraversal(root.left);
+                preorderTraversal(root.right);
             }
         }
     }
-public class BST {
+        class BST {
     public static void main(String[] args) {
         BinarySolution t1 =new BinarySolution();
         t1.insertkey('C');
